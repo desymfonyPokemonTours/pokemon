@@ -1,8 +1,7 @@
 <?php
 
-namespace Suntransfers\Pokemon\Infrastructure\DependencyInjection\Symfony;
+namespace Desymfony\Pokemon\Infrastructure\DependencyInjection\Symfony;
 
-use Suntransfers\Doctrine\DependencyInjection\Symfony\SuntransfersDoctrineExtension;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -16,7 +15,7 @@ class PokemonExtension extends Extension
             throw new \InvalidArgumentException('The container builder needs to have a parameter called "environment"');
         }
 
-        SuntransfersDoctrineExtension::addMappingDir(__DIR__ . '/../../Persistence/Doctrine/Mapping');
+//        SuntransfersDoctrineExtension::addMappingDir(__DIR__ . '/../../Persistence/Doctrine/Mapping');
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . DIRECTORY_SEPARATOR . 'config'));
         $this->loadServiceConfigurations($loader, $this->getEnvironmentValue($container));
@@ -28,7 +27,7 @@ class PokemonExtension extends Extension
      */
     private function loadServiceConfigurations(YamlFileLoader $loader, $environment)
     {
-        $loader->load('parameters_' . $environment . '.yml');
+        $loader->load('parameters.yml');
         $loader->load('repositories-domain.yml');
         $loader->load('repositories-infrastructure.yml');
         $loader->load('services-domain.yml');

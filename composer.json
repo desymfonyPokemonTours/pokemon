@@ -2,10 +2,9 @@
   "name": "desymfony/pokemon",
   "license": "proprietary",
   "type": "library",
-  "description": "Suntransfers Vendor Skeleton in PHP",
   "autoload": {
     "psr-4": {
-      "Suntransfers\\": "src/Suntransfers"
+      "Desymfony\\": "src/Desymfony"
     }
   },
   "autoload-dev": {

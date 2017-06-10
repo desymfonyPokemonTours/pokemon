@@ -1,0 +1,14 @@
+Desymonfy\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemon:
+  type: entity
+  repositoryClass: Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Repository\DoctrinePokemonRepository
+  id:
+    id:
+      type: integer
+      length: 11
+      unsigned: true
+      generator:
+        strategy: AUTO
+  fields:
+    name:
+      type: string
+      length: 100

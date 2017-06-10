@@ -1,6 +1,6 @@
 <?php
 
-namespace Suntransfers\Pokemon\Infrastructure\DependencyInjection\Symfony;
+namespace Desymfony\Pokemon\Infrastructure\DependencyInjection\Symfony;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
