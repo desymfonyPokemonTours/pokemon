@@ -1,6 +1,6 @@
 
 {
-  "name": "suntransfers/st-php-vendor-skeleton",
+  "name": "desymfony/pokemon",
   "license": "proprietary",
   "type": "library",
   "description": "Suntransfers Vendor Skeleton in PHP",
