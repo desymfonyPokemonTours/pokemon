@@ -1,0 +1,9 @@
+parameters:
+  is_debug_mode: true
+  suntransfers.doctrine.orm.dbal:
+    host: '%database_host%'
+    dbname: 'travelgroup'
+    driver: 'mysqli'
+    port: '3306'
+    user: 'travelgroup_dba'
+    password: 'JWi28GsqgqGNOihZ'

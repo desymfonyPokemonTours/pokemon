@@ -1,0 +1,37 @@
+
+{
+  "name": "suntransfers/st-php-vendor-skeleton",
+  "license": "proprietary",
+  "type": "library",
+  "description": "Suntransfers Vendor Skeleton in PHP",
+  "autoload": {
+    "psr-4": {
+      "Suntransfers\\": "src/Suntransfers"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "suntransfers/doctrine": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.5",
+    "bruli/php-git-hooks": "^4.4"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/suntransfers/doctrine.git"
+    }
+  ],
+  "config": {
+    "bin-dir": "bin",
+    "github-oauth": {
+      "github.com": "e44bd87c4163ec6cc1ad5a500f81e7ee125b2b54"
+    }
+  }
+}
