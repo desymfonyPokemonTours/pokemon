@@ -1,6 +1,6 @@
 <?php
 
-namespace Desymonfy\Pokemon\Domain\Entity;
+namespace Desymfony\Pokemon\Domain\Entity;
 
 class Pokemon
 {

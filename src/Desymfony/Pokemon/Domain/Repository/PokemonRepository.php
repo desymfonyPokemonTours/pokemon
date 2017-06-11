@@ -3,7 +3,7 @@
 namespace Desymfony\Pokemon\Domain\Repository;
 
 use Desymfony\Pokemon\Domain\Exception\PokemonNotFoundException;
-use Desymonfy\Pokemon\Domain\Entity\Pokemon;
+use Desymfony\Pokemon\Domain\Entity\Pokemon;
 
 interface PokemonRepository
 {
