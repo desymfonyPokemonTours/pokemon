@@ -2,11 +2,13 @@
 
 namespace Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Repository;
 
+use Desymfony\Doctrine\EntityRepository\DesymfonyEntityRepository;
 use Desymfony\Pokemon\Domain\Exception\PokemonNotFoundException;
 use Desymfony\Pokemon\Domain\Repository\PokemonRepository;
+use Desymonfy\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemon;
 use Doctrine\ORM\EntityRepository;
 
-class DoctrinePokemonRepository extends EntityRepository implements PokemonRepository
+class DoctrinePokemonRepository extends DesymfonyEntityRepository implements PokemonRepository
 {
     public function getById($pokemonId)
     {
@@ -17,5 +19,10 @@ class DoctrinePokemonRepository extends EntityRepository implements PokemonRepos
         }
 
         return $pokemon;
+    }
+
+    protected function getEntityNamespace()
+    {
+        return DoctrinePokemon::class;
     }
 }

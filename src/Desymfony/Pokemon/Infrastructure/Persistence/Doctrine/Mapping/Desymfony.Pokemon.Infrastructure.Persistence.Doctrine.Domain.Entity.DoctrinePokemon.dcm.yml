@@ -1,4 +1,5 @@
 Desymonfy\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemon:
+  table: pokemon
   type: entity
   repositoryClass: Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Repository\DoctrinePokemonRepository
   id:

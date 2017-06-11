@@ -7,11 +7,7 @@
       "Desymfony\\": "src/Desymfony"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Tests\\": "tests/"
-    }
-  },
+  "minimum-stability": "stable",
   "require": {
     "php": "^5.6 || ^7.0"
   },
@@ -20,9 +16,6 @@
     "bruli/php-git-hooks": "^4.4"
   },
   "config": {
-    "bin-dir": "bin",
-    "github-oauth": {
-      "github.com": "e44bd87c4163ec6cc1ad5a500f81e7ee125b2b54"
-    }
+    "bin-dir": "bin"
   }
 }

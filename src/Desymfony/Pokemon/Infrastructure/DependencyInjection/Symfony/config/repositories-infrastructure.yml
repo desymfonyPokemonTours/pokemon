@@ -1,6 +1,5 @@
 services:
   desymfony.pokemon.infrastructure.persistence.doctrine.repository.doctrine_pokemon_repository:
     class: Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Repository\DoctrinePokemonRepository
-    factory: ['@doctrine.orm.default_entity_manager', getRepository]
-    arguments:
-        - Desymonfy\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemon
+    parent: desymfony.doctrine.entity_repository
+    public: false
