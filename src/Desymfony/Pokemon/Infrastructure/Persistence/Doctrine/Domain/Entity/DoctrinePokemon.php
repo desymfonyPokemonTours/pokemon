@@ -6,5 +6,8 @@ use Desymfony\Pokemon\Domain\Entity\Pokemon;
 
 class DoctrinePokemon extends Pokemon
 {
-
+    /**
+     * @var DoctrinePokemonType
+     */
+    protected $pokemonTypes;
 }

@@ -14,6 +14,11 @@ class Pokemon
      */
     protected $name;
 
+    /**
+     * @var int[]
+     */
+    protected $typeIds;
+
     public function getId()
     {
         return $this->id;
@@ -22,5 +27,10 @@ class Pokemon
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getTypeIds()
+    {
+        return $this->typeIds;
     }
 }

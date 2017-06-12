@@ -1,0 +1,22 @@
+Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemonType:
+  type: entity
+  table: pokemon_type
+  id:
+    id:
+      type: integer
+      length: 11
+      unsigned: true
+      generator:
+        strategy: AUTO
+  fields:
+    typeId:
+      type: integer
+      lenght: 11
+  manyToOne:
+    pokemon:
+      targetEntity: Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemon
+      inversedBy: pokemonTypes
+      joinColumn:
+        name: pokemon_id
+        referencedColumnName: id
+

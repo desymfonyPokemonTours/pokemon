@@ -13,3 +13,7 @@ Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePoke
     name:
       type: string
       length: 100
+  oneToMany:
+    pokemonTypes:
+      targetEntity: Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemonType
+      mappedBy: pokemon
