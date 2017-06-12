@@ -7,7 +7,18 @@ use Desymfony\Pokemon\Domain\Entity\Pokemon;
 class DoctrinePokemon extends Pokemon
 {
     /**
-     * @var DoctrinePokemonType
+     * @var DoctrinePokemonType[]
      */
     protected $pokemonTypes;
+
+    public function getTypeIds()
+    {
+        $typeIds = [];
+
+        foreach ($this->pokemonTypes as $pokemonType) {
+            $typeIds = $pokemonType->getTypeId();
+        }
+
+        return $typeIds;
+    }
 }
