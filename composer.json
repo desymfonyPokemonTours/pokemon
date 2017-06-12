@@ -9,7 +9,8 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "php": "^5.6 || ^7.0"
+    "php": "^5.6 || ^7.0",
+    "desymfony/doctrine": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.5",
@@ -17,5 +18,11 @@
   },
   "config": {
     "bin-dir": "bin"
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://patxi1980@bitbucket.org/kanunak/doctrine.git"
+    }
+  ]
 }
