@@ -1,1 +1,6 @@
 services:
+
+  desymfony.pokemon.domain.service.get_pokemon_by_id_service:
+    class: Desymfony\Pokemon\Domain\Service\GetPokemonByIdService
+    arguments:
+      - '@desymfony.pokemon.domain.pokemon.repository.pokemon_repository'
