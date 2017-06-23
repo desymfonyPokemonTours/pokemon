@@ -53,8 +53,8 @@ class DoctrinePokemonRepository extends DesymfonyEntityRepository implements Pok
         $queryBuilder = $this->createQueryBuilder('pokemon');
 
         $queryBuilder
-            ->innerJoin('pokemon.pokemonTypes', 'type')
-            ->andWhere('type.id = :typeId')
+            ->innerJoin('pokemon.pokemonTypes', 'pokemonType')
+            ->andWhere('pokemonType.typeId = :typeId')
             ->setParameter(':typeId', $typeId)
         ;
 
