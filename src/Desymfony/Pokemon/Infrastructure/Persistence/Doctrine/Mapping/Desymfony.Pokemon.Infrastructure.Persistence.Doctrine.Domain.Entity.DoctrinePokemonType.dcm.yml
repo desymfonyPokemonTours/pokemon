@@ -12,6 +12,7 @@ Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePoke
     typeId:
       type: integer
       lenght: 11
+      column: type_id
   manyToOne:
     pokemon:
       targetEntity: Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemon
