@@ -4,3 +4,18 @@ services:
     class: Desymfony\Pokemon\Domain\Service\GetPokemonByIdService
     arguments:
       - '@desymfony.pokemon.domain.pokemon.repository.pokemon_repository'
+
+  desymfony.pokemon.domain.service.get_pokemons_by_ids_service:
+    class: Desymfony\Pokemon\Domain\Service\GetPokemonsByIdsService
+    arguments:
+      - '@desymfony.pokemon.domain.pokemon.repository.pokemon_repository'
+
+  desymfony.pokemon.domain.service.get_pokemons_by_generation_service:
+    class: Desymfony\Pokemon\Domain\Service\GetPokemonsByGenerationService
+    arguments:
+      - '@desymfony.pokemon.domain.pokemon.repository.pokemon_repository'
+
+  desymfony.pokemon.domain.service.get_pokemons_by_type_id_service:
+    class: Desymfony\Pokemon\Domain\Service\GetPokemonsByTypeIdService
+    arguments:
+      - '@desymfony.pokemon.domain.pokemon.repository.pokemon_repository'

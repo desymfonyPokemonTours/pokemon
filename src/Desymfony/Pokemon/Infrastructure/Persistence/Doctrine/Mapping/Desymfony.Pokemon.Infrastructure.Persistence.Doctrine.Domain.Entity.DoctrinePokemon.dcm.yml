@@ -13,6 +13,10 @@ Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePoke
     name:
       type: string
       length: 100
+    generation:
+      type: integer
+      unsigned: true
+      nullable: false
   oneToMany:
     pokemonTypes:
       targetEntity: Desymfony\Pokemon\Infrastructure\Persistence\Doctrine\Domain\Entity\DoctrinePokemonType

@@ -13,4 +13,22 @@ interface PokemonRepository
      * @throws PokemonNotFoundException
      */
     public function getById($pokemonId);
+
+    /**
+     * @param int[] $pokemonIds
+     * @return Pokemon[]
+     */
+    public function getByIds($pokemonIds);
+
+    /**
+     * @param int $generation
+     * @return Pokemon[]
+     */
+    public function getByGeneration($generation);
+
+    /**
+     * @param int $typeId
+     * @return Pokemon[]
+     */
+    public function getByTypeId($typeId);
 }
