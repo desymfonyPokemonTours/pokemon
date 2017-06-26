@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "15fbc22623f775b23467fefa0c05d652",
+    "content-hash": "aab9a540e74fb911e69490e34416e0a5",
     "packages": [
         {
             "name": "desymfony/doctrine",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/desymfonyPokemonTours/doctrine.git",
@@ -44,7 +44,7 @@
                 "source": "https://github.com/desymfonyPokemonTours/doctrine/tree/master",
                 "issues": "https://github.com/desymfonyPokemonTours/doctrine/issues"
             },
-            "time": "2017-06-11 09:14:20"
+            "time": "2017-06-11T09:14:20+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3814,9 +3814,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "desymfony/doctrine": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
