@@ -22,7 +22,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://patxi1980@bitbucket.org/kanunak/doctrine.git"
+      "url": "https://github.com/desymfonyPokemonTours/doctrine.git"
     }
   ]
 }
