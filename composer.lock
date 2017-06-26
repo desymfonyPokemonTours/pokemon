@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b8a04da714345e675f053bf43f82abb",
+    "content-hash": "15fbc22623f775b23467fefa0c05d652",
     "packages": [
         {
             "name": "desymfony/doctrine",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://patxi1980@bitbucket.org/kanunak/doctrine.git",
+                "url": "https://github.com/desymfonyPokemonTours/doctrine.git",
                 "reference": "cbcf49f132e985961f929268ccb5406b72a093b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/desymfonyPokemonTours/doctrine/zipball/cbcf49f132e985961f929268ccb5406b72a093b4",
+                "reference": "cbcf49f132e985961f929268ccb5406b72a093b4",
+                "shasum": ""
             },
             "require": {
                 "doctrine/orm": "^2.5",
@@ -34,6 +40,10 @@
                 "proprietary"
             ],
             "description": "Desymfony Doctrine EntityManager configuration project",
+            "support": {
+                "source": "https://github.com/desymfonyPokemonTours/doctrine/tree/master",
+                "issues": "https://github.com/desymfonyPokemonTours/doctrine/issues"
+            },
             "time": "2017-06-11 09:14:20"
         },
         {
